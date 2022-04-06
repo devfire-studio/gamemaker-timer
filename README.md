@@ -2,7 +2,7 @@
 This is a small GameMaker Studio system to control time counting in an easy and practical way, its intention is to be simple and to attend the most basic needs in counter control.
 
 # HOW TO USE:
-1 - Copy the content of the file Timer.txt and paste in some script of your preference in your project.
+1 - Copy the function in the content of the file `Timer.gml` and paste in some script of your preference in your project.
 <br>
 2 - Use the examples below to understand how to use:
 
