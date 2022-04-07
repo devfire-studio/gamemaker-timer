@@ -35,7 +35,7 @@ if (mouse_check(mb_left)) {
 ```
 4 - The attack cooldown system is done!
 
-## MORE FEATURES
+# MORE FEATURES
 ### new Time()
 - useDeltaTime: true or false - Use or not delta_time
 - defaultOption: struct - Change default option values of created timers
