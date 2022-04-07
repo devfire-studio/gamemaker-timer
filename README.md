@@ -64,7 +64,7 @@ timer.update();
 ```
 
 ### SET
-Shortened mode will work like a countdown, from 30 to 0.
+Shortened mode will work like a countdown, from 120 to 0.
 ```gml
 timer.set("delay", 120); // 2 seconds
 ```
