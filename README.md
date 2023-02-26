@@ -31,7 +31,7 @@ if (mouse_check(mb_left)) {
         // YOUR ATTACK CODE HERE
         show_message("Attack done!");
         // NOW LET'S SET THE ATTACK_COOLDOWN TIMER TO 120 FRAMES (2 SECONDS)
-        timer.set("Attack done!", 120);
+        timer.set("attack_cooldown", 120);
     }
 }
 ```
