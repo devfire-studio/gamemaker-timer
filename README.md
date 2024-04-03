@@ -77,7 +77,7 @@ You can use timers to manage cooldowns for character abilities. For example, if 
 /// Create event
 var timer = new Timer();
 
-timer.set("AbilityCooldown", 30, function () {
+timer.set("AbilityCooldown", 30 * 60, function () {
   // code to reactivate the ability
 });
 ```
@@ -103,6 +103,7 @@ switch (state) {
     break;
   case "jump":
     // do something
+    timer.set("JumpAbilityCooldown", 1.5 * 60);
     break;
 }
 ```
