@@ -67,9 +67,9 @@ draw_text(32, 32, "Test 2: " + string(timer.get("test 2")));
 draw_text(32, 48, "Test 3: " + string(timer.get("test 3")));
 ```
 
-## Usage
+## Usage exemples
 
-### 1. Character Ability Cooldowns
+### Character Ability Cooldowns
 
 You can use timers to manage cooldowns for character abilities. For example, if a character has a special ability that can only be used every 30 seconds, you could use a timer to track this cooldown period.
 
@@ -82,7 +82,7 @@ timer.set("AbilityCooldown", 30 * 60, function () {
 });
 ```
 
-### 2. State machine
+### State machine
 
 This code demonstrates the use of the timer in a state machine, a common pattern in game development for managing different states of a character or object.
 
