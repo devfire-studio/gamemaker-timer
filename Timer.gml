@@ -96,6 +96,6 @@ function Timer(_timers = {}) constructor {
     if (_ticks_or_time != undefined) {
       set(_key, is_numeric(_ticks_or_time) ? { ticks: _ticks_or_time } : _ticks_or_time)
     }
-    return false
+    return true
   }
 }
