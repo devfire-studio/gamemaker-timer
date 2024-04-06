@@ -9,10 +9,10 @@ The `Time` struct represents a unit of time with some properties like duration (
 ### Properties
 
 - `ticks`: The duration of the `Time` in ticks.
-- `repeats`: The number of times the `Time` should repeat (default is 0, no repeat).
-- `dt_enabled`: Whether to use delta time or not to decrement the ticks (default is true).
-- `callback`: The callback function to execute when the time expires (default is undefined).
-- `default_ticks`: The default ticks to reset the time when repeat (default is the creation ticks).
+- `repeats`: [Optional] The number of times the `Time` should repeat (default is 0, no repeat).
+- `dt_enabled`: [Optional] Whether to use delta time or not to decrement the ticks (default is true).
+- `callback`: [Optional] The callback function to execute when the time expires (default is undefined).
+- `default_ticks`: [Optional] The default ticks to reset the time when repeat (default is the creation ticks).
 
 ### Example
 
