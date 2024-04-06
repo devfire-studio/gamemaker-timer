@@ -40,6 +40,8 @@ The `Timer` manages multiple `Time` struct and updates them over time. It provid
 
 ### Usage example
 
+Copy the `Timer.gml` into your project and you can use it like this:
+
 ```js
 /// Create event
 timer = new Timer();
@@ -68,7 +70,7 @@ draw_text(32, 16, "Test 1: " + string(timer.get("test 1")));
 draw_text(32, 32, "Test 2: " + string(timer.get("test 2")));
 ```
 
-## Other use cases
+## Other exemples
 
 ### Character Ability Cooldowns
 
@@ -138,6 +140,44 @@ switch (state) {
       state = "idle";
     }
     break;
+}
+```
+
+### Global singleton timer
+
+You can use the a global singleton timer to manage the same `Timer` for all your game objects.
+
+#### obj_controller
+
+```js
+/// Create event
+global.timer = new Timer();
+
+/// Step event
+global.timer.update();
+```
+
+#### obj_character
+
+```js
+/// Create event
+can_do_something = false;
+
+global.timer.set(
+  "something_cooldown",
+  new Time({
+    ticks: 1 * 60, // it will run for 1 second
+    callback: method(self, function (_key, _time) {
+      can_do_something = true;
+    }),
+  })
+);
+
+/// Step event
+if (can_do_something) {
+  show_debug_message("Now I can do something!");
+} else {
+  show_debug_message("I can't do something yet...");
 }
 ```
 
