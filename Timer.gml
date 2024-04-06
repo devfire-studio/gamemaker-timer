@@ -45,7 +45,7 @@ function Timer(_timers = {}) constructor {
       if (_time.ticks <= 0) {
         _time.ticks = 0
         if (is_method(_time.callback)) {
-          _time.callback(_time, i)
+          _time.callback(_key, _time)
         }
         if (_time.repeats > 0) {
           _time.repeats -= 1
